@@ -39,12 +39,12 @@ namespace LibrosWeb.Catalogos.Idiomas
             {
                 string IdIdioma = GVIdiomas.DataKeys[e.RowIndex].Values["id_idioma"].ToString();
                 BLLIdiomas.DeleteIdioma(int.Parse(IdIdioma));
-                Util.SweetBox("Idioma eliminada con éxito", "", "success", this.Page, this.GetType());
+                Util.SweetBox("Idioma eliminado con éxito", "", "success", this.Page, this.GetType());
 
             }
             catch (Exception ex)
             {
-                Util.SweetBox("Idioma no puede ser eliminada", "", "warning", this.Page, this.GetType());
+                Util.SweetBox("Idioma no puede ser eliminado", "", "warning", this.Page, this.GetType());
             }
             RefrescarGrid();
         }

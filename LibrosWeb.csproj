@@ -109,6 +109,8 @@
     <Content Include="Catalogos\Generos\ListaGeneros.aspx" />
     <Content Include="Catalogos\Idiomas\EditarIdiomas.aspx" />
     <Content Include="Catalogos\Idiomas\ListaIdiomas.aspx" />
+    <Content Include="Catalogos\Paises\EditarPaises.aspx" />
+    <Content Include="Catalogos\Paises\ListaPaises.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -245,6 +247,20 @@
     <Compile Include="Catalogos\Idiomas\ListaIdiomas.aspx.designer.cs">
       <DependentUpon>ListaIdiomas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\Paises\EditarPaises.aspx.cs">
+      <DependentUpon>EditarPaises.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Paises\EditarPaises.aspx.designer.cs">
+      <DependentUpon>EditarPaises.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Paises\ListaPaises.aspx.cs">
+      <DependentUpon>ListaPaises.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Paises\ListaPaises.aspx.designer.cs">
+      <DependentUpon>ListaPaises.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,8 +306,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Catalogos\Autores\" />
     <Folder Include="Catalogos\Libros\" />
-    <Folder Include="Catalogos\NewFolder1\" />
-    <Folder Include="Catalogos\Paises\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
