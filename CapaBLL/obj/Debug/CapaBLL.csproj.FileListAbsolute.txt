@@ -1,0 +1,11 @@
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\bin\Debug\CapaBLL.dll
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\bin\Debug\CapaBLL.pdb
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\bin\Debug\CapaDAL.dll
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\bin\Debug\VO.dll
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\bin\Debug\CapaDAL.pdb
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\bin\Debug\VO.pdb
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\obj\Debug\CapaBLL.csproj.AssemblyReference.cache
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\obj\Debug\CapaBLL.csproj.CoreCompileInputs.cache
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\obj\Debug\CapaBLL.csproj.CopyComplete
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\obj\Debug\CapaBLL.dll
+C:\Users\miner\source\repos\LibrosWeb\CapaBLL\obj\Debug\CapaBLL.pdb

@@ -1,0 +1,6 @@
+C:\Users\miner\source\repos\LibrosWeb\VO\bin\Debug\VO.dll
+C:\Users\miner\source\repos\LibrosWeb\VO\bin\Debug\VO.pdb
+C:\Users\miner\source\repos\LibrosWeb\VO\obj\Debug\VO.csproj.AssemblyReference.cache
+C:\Users\miner\source\repos\LibrosWeb\VO\obj\Debug\VO.csproj.CoreCompileInputs.cache
+C:\Users\miner\source\repos\LibrosWeb\VO\obj\Debug\VO.dll
+C:\Users\miner\source\repos\LibrosWeb\VO\obj\Debug\VO.pdb
