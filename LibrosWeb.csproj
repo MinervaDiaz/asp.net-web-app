@@ -105,6 +105,8 @@
     <Content Include="About.aspx" />
     <Content Include="Catalogos\Editoriales\EditarEditoriales.aspx" />
     <Content Include="Catalogos\Editoriales\ListaEditoriales.aspx" />
+    <Content Include="Catalogos\Generos\EditarGeneros.aspx" />
+    <Content Include="Catalogos\Generos\ListaGeneros.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -213,6 +215,20 @@
     <Compile Include="Catalogos\Editoriales\ListaEditoriales.aspx.designer.cs">
       <DependentUpon>ListaEditoriales.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\Generos\EditarGeneros.aspx.cs">
+      <DependentUpon>EditarGeneros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Generos\EditarGeneros.aspx.designer.cs">
+      <DependentUpon>EditarGeneros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Generos\ListaGeneros.aspx.cs">
+      <DependentUpon>ListaGeneros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Generos\ListaGeneros.aspx.designer.cs">
+      <DependentUpon>ListaGeneros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,9 +273,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Catalogos\Autores\" />
-    <Folder Include="Catalogos\Generos\" />
     <Folder Include="Catalogos\Idiomas\" />
     <Folder Include="Catalogos\Libros\" />
+    <Folder Include="Catalogos\NewFolder1\" />
     <Folder Include="Catalogos\Paises\" />
   </ItemGroup>
   <ItemGroup>

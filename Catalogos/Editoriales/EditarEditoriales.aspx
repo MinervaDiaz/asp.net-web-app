@@ -28,7 +28,7 @@
 
                 <asp:Label ID="lblFoto" runat="server" CssClass="btn btn_primary" Text="Subir Imagen">Imagen</asp:Label>
                 <asp:Image ID="imgfoto" Width="100" Height="100" runat="server" />
-                <asp:Image ID="imgfotochofer" Width="100" Height="100" runat="server" />
+                <asp:Image ID="imgfotoeditorial" Width="100" Height="100" runat="server" />
                 <asp:Label ID="urlFoto" runat="server"></asp:Label>
 
                 <asp:Button ID="btnGuardar" CssClass="btn btn-primary" runat="server" Text="Guardar" OnClick="btnGuardarClick"/>

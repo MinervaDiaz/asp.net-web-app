@@ -159,13 +159,13 @@ namespace LibrosWeb.Catalogos.Editoriales
         protected global::System.Web.UI.WebControls.Image imgfoto;
 
         /// <summary>
-        /// Control imgfotochofer.
+        /// Control imgfotoeditorial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgfotochofer;
+        protected global::System.Web.UI.WebControls.Image imgfotoeditorial;
 
         /// <summary>
         /// Control urlFoto.

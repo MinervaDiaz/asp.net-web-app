@@ -37,6 +37,7 @@ namespace LibrosWeb.Catalogos.Editoriales
                         this.txtciudad.Text = editorialVO.ciudad;
                         this.txttelefono.Text = editorialVO.telefono;
                         this.txtemail.Text = editorialVO.email;
+                        this.imgfotoeditorial.ImageUrl = editorialVO.url_foto;
                         this.urlFoto.Text = editorialVO.url_foto;
                     }
                     else
