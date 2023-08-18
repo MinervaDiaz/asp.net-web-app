@@ -29,7 +29,6 @@ namespace LibrosWeb.Catalogos.Editoriales
             GVEditoriales.DataSource = BLLEditoriales.GetlistEditorial();
             GVEditoriales.DataBind();
         }
-
         protected void GVEditoriales_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             try
@@ -37,13 +36,14 @@ namespace LibrosWeb.Catalogos.Editoriales
                 string IdEditorial = GVEditoriales.DataKeys[e.RowIndex].Values["id_editorial"].ToString();
                 BLLEditoriales.DeleteEditorial(int.Parse(IdEditorial));
                 Util.SweetBox("Editorial eliminada con éxito", "", "success", this.Page, this.GetType());
-                
+                RefrescarGrid();
+
             }
             catch(Exception ex)
             {
                 Util.SweetBox("Editorial no puede ser eliminada", "","warning", this.Page, this.GetType());
             }
-            RefrescarGrid();
+            
         }
         protected void GVEditoriales_RowCommand(object sender, GridViewCommandEventArgs e)
         {
@@ -93,8 +93,5 @@ namespace LibrosWeb.Catalogos.Editoriales
         
             Response.Redirect("EditarEditoriales.aspx");
         }
-
-
-
     }
 }

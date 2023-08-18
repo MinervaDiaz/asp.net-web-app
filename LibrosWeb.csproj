@@ -103,6 +103,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Catalogos\Autores\EditarAutores.aspx" />
+    <Content Include="Catalogos\Autores\ListaAutores.aspx" />
     <Content Include="Catalogos\Editoriales\EditarEditoriales.aspx" />
     <Content Include="Catalogos\Editoriales\ListaEditoriales.aspx" />
     <Content Include="Catalogos\Generos\EditarGeneros.aspx" />
@@ -129,7 +131,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\sweetalert2.css" />
+    <Content Include="Content\sweetalert.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -167,7 +169,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\sweetalert2.js" />
+    <Content Include="Scripts\sweetalert.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -205,6 +207,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Catalogos\Autores\EditarAutores.aspx.cs">
+      <DependentUpon>EditarAutores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Autores\EditarAutores.aspx.designer.cs">
+      <DependentUpon>EditarAutores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\Autores\ListaAutores.aspx.cs">
+      <DependentUpon>ListaAutores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\Autores\ListaAutores.aspx.designer.cs">
+      <DependentUpon>ListaAutores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\Editoriales\EditarEditoriales.aspx.cs">
       <DependentUpon>EditarEditoriales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,7 +320,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Catalogos\Autores\" />
     <Folder Include="Catalogos\Libros\" />
   </ItemGroup>
   <ItemGroup>

@@ -14,9 +14,9 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="Content/sweetalert2.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
-    <script src="Scripts/sweetalert2.js"></script>
+    <link href="Content/sweetalert.css" rel="stylesheet" />
+    <script src="Scripts/sweetalert.js"></script>
 </head>
 <body>
     <form runat="server">
@@ -50,6 +50,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Generos/ListaGeneros.aspx">Generos</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Idiomas/ListaIdiomas.aspx">Idiomas</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Paises/ListaPaises.aspx">Paises</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Autores/ListaAutores.aspx">Autores</a></li>
                     </ul>
                 </div>
             </div>
