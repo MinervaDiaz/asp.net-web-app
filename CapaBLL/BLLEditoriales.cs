@@ -37,12 +37,17 @@ namespace CapaBLL
         }
 
         //DELETE EDITORIAL
-        public static void DeleteEditorial(int id_editorial)
+        public static string DeleteEditorial(int id_editorial)
         {
             try
             {
                 EditorialVO Editorial = DALEditoriales.GetEditorialById(id_editorial);
-                DALEditoriales.DeleteEditorial(id_editorial);
+                if(Editorial != null)
+                {
+                    DALEditoriales.DeleteEditorial(id_editorial);
+                    return "1";
+                }
+                return "0";
             }
             catch (Exception)
             {

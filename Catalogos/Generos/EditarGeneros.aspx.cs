@@ -20,7 +20,7 @@ namespace LibrosWeb.Catalogos.Generos
                 if (Request.QueryString["Id"] == null)
                 {
                     Titulo.Text = "Registrar Genero";
-                    Subtitulo.Text = "-";
+                    Subtitulo.Text = "";
                 }
             }
             else { }

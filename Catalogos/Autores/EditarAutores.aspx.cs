@@ -21,7 +21,7 @@ namespace LibrosWeb.Catalogos.Autores
                 if (Request.QueryString["Id"] == null)
                 {
                     Titulo.Text = "Registrar Autor";
-                    Subtitulo.Text = "-";
+                    Subtitulo.Text = "";
                 }
                 else
                 {
@@ -29,7 +29,7 @@ namespace LibrosWeb.Catalogos.Autores
                     AutorVO autorVO = BLLAutores.GetAutorById(varIdAutor);
 
                     Titulo.Text = "Editar Autor";
-                    Subtitulo.Text = "Editar autor con código: " + varIdAutor.ToString(); ;
+                    Subtitulo.Text = "Código del autor: " + varIdAutor.ToString(); ;
 
                     if (autorVO.id_autor != 0)
                     {

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div class="container">
         <div class="row">
-            <asp:Label ID="Titulo" CssClass="text-center modal-title" Text="" runat="server"></asp:Label>
+            <asp:Label ID="Titulo" CssClass="text-center modal-title fs-4 mt-2 fw-semibold mb-5" Text="" runat="server"></asp:Label>
             <asp:Label ID="Subtitulo" CssClass="text-center modal-title" Text="" runat="server"></asp:Label>
         </div>
     </div>
@@ -11,8 +11,8 @@
         <div class="col-md-12">
             <div class="form-group">
                 <asp:Label ID="lblididioma" runat="server" Text=""></asp:Label>
-                <asp:Label ID="lblnombre" runat="server" Text="" >Nombre</asp:Label>
-                <asp:TextBox ID="txtnombre" runat="server" placeholder=""  CssClass="form-control" required="true"></asp:TextBox>
+                <asp:Label ID="lblnombre" runat="server" Text="" CssClass="fw-bold mb-2" >Nombre</asp:Label>
+                <asp:TextBox ID="txtnombre" runat="server" placeholder=""  CssClass="form-control mb-5" required="true"></asp:TextBox>
 
                 <asp:Button ID="btnGuardar" CssClass="btn btn-primary" runat="server" Text="Guardar" OnClick="btnGuardarClick"/>
             </div>

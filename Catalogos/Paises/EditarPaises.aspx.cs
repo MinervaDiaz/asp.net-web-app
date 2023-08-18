@@ -13,7 +13,7 @@ namespace LibrosWeb.Catalogos.Paises
                 if (Request.QueryString["Id"] == null)
                 {
                     Titulo.Text = "Registrar Pais";
-                    Subtitulo.Text = "-";
+                    Subtitulo.Text = "";
                 }
             }
             else { }

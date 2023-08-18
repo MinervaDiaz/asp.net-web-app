@@ -31,19 +31,28 @@ namespace LibrosWeb.Catalogos.Editoriales
         }
         protected void GVEditoriales_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            try
+            string IdEditorial = GVEditoriales.DataKeys[e.RowIndex].Values["id_editorial"].ToString();
+            string resultado = BLLEditoriales.DeleteEditorial(int.Parse(IdEditorial));
+            string mensaje = "";
+            string sub = "";
+            string clase = "";
+
+            switch (resultado)
             {
-                string IdEditorial = GVEditoriales.DataKeys[e.RowIndex].Values["id_editorial"].ToString();
-                BLLEditoriales.DeleteEditorial(int.Parse(IdEditorial));
-                Util.SweetBox("Editorial eliminada con éxito", "", "success", this.Page, this.GetType());
+                case "1":
+                    mensaje = "Editorial eliminada con éxito";
+                    sub = "";
+                    clase = "success";
+                    break;
+                case "0":
+                    mensaje = "Esta editorial no se puede eliminar";
+                    sub = "";
+                    clase = "warning";
+                    break;
+            }
+                Util.SweetBox(mensaje, sub, clase, this.Page, this.GetType());
                 RefrescarGrid();
 
-            }
-            catch(Exception ex)
-            {
-                Util.SweetBox("Editorial no puede ser eliminada", "","warning", this.Page, this.GetType());
-            }
-            
         }
         protected void GVEditoriales_RowCommand(object sender, GridViewCommandEventArgs e)
         {

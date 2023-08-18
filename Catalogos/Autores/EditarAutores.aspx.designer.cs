@@ -141,15 +141,6 @@ namespace LibrosWeb.Catalogos.Autores
         protected global::System.Web.UI.WebControls.Button btnSubeImagen;
 
         /// <summary>
-        /// Control lblFoto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFoto;
-
-        /// <summary>
         /// Control imgfoto.
         /// </summary>
         /// <remarks>

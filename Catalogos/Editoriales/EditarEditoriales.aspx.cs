@@ -20,7 +20,7 @@ namespace LibrosWeb.Catalogos.Editoriales
                 if (Request.QueryString["Id"] == null)
                 {
                     Titulo.Text = "Registrar Editorial";
-                    Subtitulo.Text = "-";
+                    Subtitulo.Text = "";
                 }
                 else
                 {
@@ -28,11 +28,11 @@ namespace LibrosWeb.Catalogos.Editoriales
                     EditorialVO editorialVO = BLLEditoriales.GetEditorialById(varIdEditorial);
 
                     Titulo.Text = "Editar Editorial";
-                    Subtitulo.Text = "Editar editorial con código: " + varIdEditorial.ToString(); ;
+                    Subtitulo.Text = "Editorial con código: " + varIdEditorial.ToString(); ;
                     
                     if (editorialVO.id_editorial != 0)
                     {
-                        this.lblideditorial.Text = editorialVO.id_editorial.ToString();
+                        
                         this.txtnombre.Text = editorialVO.nombre;
                         this.txtciudad.Text = editorialVO.ciudad;
                         this.txttelefono.Text = editorialVO.telefono;

@@ -18,7 +18,7 @@ namespace LibrosWeb.Catalogos.Idiomas
                 if (Request.QueryString["Id"] == null)
                 {
                     Titulo.Text = "Registrar Idioma";
-                    Subtitulo.Text = "-";
+                    Subtitulo.Text = "";
                 }
             }
             else { }
