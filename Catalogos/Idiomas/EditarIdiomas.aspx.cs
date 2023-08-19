@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -25,12 +26,12 @@ namespace LibrosWeb.Catalogos.Idiomas
         }
         protected void btnGuardarClick(object sender, EventArgs e)
         {
+            if (Request.QueryString["Id"] == null) { }
             try
             {
                 string nombre = txtnombre.Text;
-
                 BLLIdiomas.InsertarIdioma(nombre);
-                Util.SweetBox("Correcto", "Editorial creada con éxito", "success", this.Page, this.GetType());
+                Util.SweetBox("correcto", "Idioma agregado con éxito", "success", this.Page, this.GetType());
                 Response.Redirect("ListaIdiomas.aspx");
             }
             catch (Exception ex)

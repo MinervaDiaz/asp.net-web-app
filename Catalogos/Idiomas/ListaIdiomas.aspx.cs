@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using VO;
@@ -31,21 +32,33 @@ namespace LibrosWeb.Catalogos.Idiomas
 
             GVIdiomas.DataSource = BLLIdiomas.GetlistIdioma();
             GVIdiomas.DataBind();
+
         }
 
         protected void GVIdiomas_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            try
-            {
-                string IdIdioma = GVIdiomas.DataKeys[e.RowIndex].Values["id_idioma"].ToString();
-                BLLIdiomas.DeleteIdioma(int.Parse(IdIdioma));
-                Util.SweetBox("Idioma eliminado con éxito", "", "success", this.Page, this.GetType());
+            
+            string IdIdioma = GVIdiomas.DataKeys[e.RowIndex].Values["id_idioma"].ToString();
+            string Resultado = BLLIdiomas.DeleteIdioma(int.Parse(IdIdioma));
+            string mensaje = "";
+            string sub = "";
+            string clase = "";
 
-            }
-            catch (Exception ex)
+            switch (Resultado)
             {
-                Util.SweetBox("Idioma no puede ser eliminado", "", "warning", this.Page, this.GetType());
+                case "1":
+                    mensaje = "Idioma eliminada con éxito";
+                    sub = "";
+                    clase = "success";
+                    break;
+                default:
+                    mensaje = "Idioma no puede ser eliminado";
+                    sub = "Este idioma no puede ser eliminado";
+                    clase = "warning";
+                    break;
             }
+
+            Util.SweetBox(mensaje, sub, clase, this.Page, this.GetType());
             RefrescarGrid();
         }
         protected void GVIdiomas_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -77,7 +90,7 @@ namespace LibrosWeb.Catalogos.Idiomas
 
             GVIdiomas.EditIndex = -1;
             RefrescarGrid();
-            Util.SweetBox("correcto", "Editorial actualizada con éxito", "success", this.Page, this.GetType());
+            Util.SweetBox("correcto", "Idioma actualizado con éxito", "success", this.Page, this.GetType());
         }
 
         protected void GVIdiomas_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)

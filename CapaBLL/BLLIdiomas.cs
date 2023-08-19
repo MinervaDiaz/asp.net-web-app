@@ -36,12 +36,13 @@ namespace CapaBLL
         }
 
         //DELETE 
-        public static void DeleteIdioma(int id_idioma)
+        public static string DeleteIdioma(int id_idioma)
         {
             try
             {
                 IdiomaVO Idioma = DALIdiomas.GetIdiomaById(id_idioma);
                 DALIdiomas.DeleteIdioma(id_idioma);
+                return "1";
             }
             catch (Exception)
             {

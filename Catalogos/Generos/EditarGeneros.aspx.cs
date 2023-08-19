@@ -32,7 +32,7 @@ namespace LibrosWeb.Catalogos.Generos
                     string nombre = txtnombre.Text;
 
                     BLLGeneros.InsertarGenero(nombre);
-                    Util.SweetBox("Correcto", "Editorial creada con éxito", "success", this.Page, this.GetType());
+                    Util.SweetBox("Correcto", "Genero creado con éxito", "success", this.Page, this.GetType());
                     Response.Redirect("ListaGeneros.aspx");
                 }
                 catch (Exception ex)

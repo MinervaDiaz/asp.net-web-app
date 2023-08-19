@@ -39,12 +39,12 @@ namespace LibrosWeb.Catalogos.Generos
             {
                 string IdGenero = GVGeneros.DataKeys[e.RowIndex].Values["id_genero"].ToString();
                 BLLGeneros.DeleteGenero(int.Parse(IdGenero));
-                Util.SweetBox("Editorial eliminada con éxito", "", "success", this.Page, this.GetType());
+                Util.SweetBox("Genero eliminado con éxito", "", "success", this.Page, this.GetType());
 
             }
             catch (Exception ex)
             {
-                Util.SweetBox("Editorial no puede ser eliminada", "", "warning", this.Page, this.GetType());
+                Util.SweetBox("Este genero no puede ser eliminado", "", "warning", this.Page, this.GetType());
             }
             RefrescarGrid();
         }
@@ -77,7 +77,7 @@ namespace LibrosWeb.Catalogos.Generos
 
             GVGeneros.EditIndex = -1;
             RefrescarGrid();
-            Util.SweetBox("correcto", "Editorial actualizada con éxito", "success", this.Page, this.GetType());
+            Util.SweetBox("correcto", "Genero actualizado con éxito", "success", this.Page, this.GetType());
         }
 
         protected void GVGeneros_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)

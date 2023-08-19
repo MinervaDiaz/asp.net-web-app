@@ -26,7 +26,8 @@
                     <asp:BoundField DataField="apellido_paterno" HeaderText="Ap Paterno" ItemStyle-Width="15%" />
                     <asp:BoundField DataField="apellido_materno" HeaderText="Ap Materno" ItemStyle-Width="15%" />
                     <asp:BoundField DataField="pais_id" HeaderText="Código de país" ItemStyle-Width="15%" />
-                    <asp:BoundField DataField="url_foto" HeaderText="Dirección imagen" ItemStyle-Width="15%" />
+
+
 
                     <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="" ShowHeader="true" Text="Editar" ControlStyle-CssClass="btn btn-primary btn-xs"/>
                     <%--<asp:CommandField ButtonType="Button" HeaderText="3" ShowEditButton="true" ShowHeader="true" ControlStyle-CssClass=" btn btn-success btn-xs" />--%>

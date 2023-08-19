@@ -12,17 +12,17 @@
     <div class="container">
         <div class="row">
 
-            <asp:Label runat="server" ID="lblnombre" Text="" CssClass="fw-bold">Nombre</asp:Label>
-            <asp:TextBox runat="server" ID="txtnombre" CssClass="form-control mb-4"></asp:TextBox>
+            <asp:Label runat="server" ID="lblnombre" Text="" CssClass="fw-bold" >Nombre</asp:Label>
+            <asp:TextBox runat="server" ID="txtnombre" CssClass="form-control mb-4" required="true"></asp:TextBox>
             <hr />
             <asp:Label runat="server" ID="lblapellido_paterno" Text="" CssClass="fw-bold">Apellido paterno</asp:Label>
-            <asp:TextBox runat="server" ID="txtapellido_paterno" CssClass="form-control mb-4"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtapellido_paterno" CssClass="form-control mb-4" required="true"></asp:TextBox>
             <hr />
             <asp:Label ID="lblapellido_materno" runat="server" Text="" CssClass="fw-bold">Apellido materno</asp:Label>
             <asp:TextBox runat="server" ID="txtapellido_materno" CssClass="form-control mb-4"></asp:TextBox>
             <hr />
             <asp:Label ID="lblpais" runat="server" Text="" CssClass="fw-bold">Pais</asp:Label>
-            <asp:DropDownList runat="server" ID="DDLPais" CssClass="mb-5"></asp:DropDownList>
+            <asp:DropDownList runat="server" ID="DDLPais" CssClass="mb-5" required="true"></asp:DropDownList>
             <hr />
             <asp:Label ID="lblimagen" runat="server"></asp:Label>
             <input type="file" id="SubeImagen" runat="server" class="btn btn-file" />

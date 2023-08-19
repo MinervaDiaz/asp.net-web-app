@@ -37,14 +37,13 @@ namespace LibrosWeb.Catalogos.Paises
         {
             try
             {
-                string IdIdioma = GVPaises.DataKeys[e.RowIndex].Values["id_pais"].ToString();
-                BLLIdiomas.DeleteIdioma(int.Parse(IdIdioma));
-                Util.SweetBox("Pais eliminado con éxito", "", "success", this.Page, this.GetType());
-
+                string IdPais = GVPaises.DataKeys[e.RowIndex].Values["id_pais"].ToString();
+                BLLPaises.DeletePais(int.Parse(IdPais));
+                Util.SweetBox("País eliminado con éxito", " ", "success", this.Page, this.GetType());
             }
             catch (Exception ex)
             {
-                Util.SweetBox("Pais no puede ser eliminado", "", "warning", this.Page, this.GetType());
+                Util.SweetBox("Este país no puede ser eliminado", "", "warning", this.Page, this.GetType());
             }
             RefrescarGrid();
         }

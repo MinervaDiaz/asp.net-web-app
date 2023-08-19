@@ -122,7 +122,7 @@ namespace LibrosWeb.Catalogos.Editoriales
                     BLLEditoriales.UpdateEditorial(editorialVO.id_editorial, nombre, telefono, ciudad, email, urlfoto);
 
                     //succes: marcar palomitas
-                    Util.SweetBox("Correcto", "Editorial agregada con éxito", "success", this.Page, this.GetType());
+                    Util.SweetBox("Correcto", "Editorial actualizada con éxito", "success", this.Page, this.GetType());
                 }
                 catch (Exception ex)
                 {
