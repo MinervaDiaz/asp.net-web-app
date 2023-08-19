@@ -35,12 +35,13 @@ namespace LibrosWeb.Catalogos.Editoriales
             try
             {
                 BLLEditoriales.DeleteEditorial(int.Parse(IdEditorial));
-                Util.SweetBox("Editorial eliminada con éxito", "", "success", this.Page, this.GetType());
+                Util.SweetBox("Correcto", "Editorial eliminada con éxito", "success", this.Page, this.GetType());
             }
             catch (Exception ex)
             {
-                RefrescarGrid();
+                Util.SweetBox("Error", "Esta editorial no se puede eliminar", "warning", this.Page, this.GetType());
             }
+            RefrescarGrid();
         }
         protected void GVEditoriales_RowCommand(object sender, GridViewCommandEventArgs e)
         {
